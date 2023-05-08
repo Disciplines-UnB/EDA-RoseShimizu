@@ -155,5 +155,67 @@ Nesse exemplo, a variável `num` é lida do usuário usando a função `scanf()`
 _________________________________________________________________________________________________________________________________________________________________________
 ## Loops
 
+A linguagem C oferece três tipos de loops: `while`, `do-while` e `for`. Cada tipo de loop tem suas próprias características e é adequado para diferentes situações.
+
+1. `while`: o loop `while` é usado para repetir um bloco de código enquanto uma condição for verdadeira. A sintaxe é a seguinte:
+
+```c
+while (condição) {
+    // bloco de código a ser executado enquanto a condição for verdadeira
+}
+```
+
+2. `do-while`: o loop `do-while` é semelhante ao loop `while`, mas a condição é testada no final do bloco de código. Isso garante que o bloco de código seja executado pelo menos uma vez. A sintaxe é a seguinte:
+
+```c
+do {
+    // bloco de código a ser executado pelo menos uma vez
+} while (condição);
+```
+
+3. `for`: o loop `for` é usado para repetir um bloco de código um número conhecido de vezes. A sintaxe é a seguinte:
+
+```c
+for (inicialização; condição; atualização) {
+    // bloco de código a ser repetido
+}
+```
+
+Aqui está um exemplo de cada tipo de loop:
+
+```c
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    // exemplo de while
+    i = 0;
+    while (i < 10) {
+        printf("%d ", i);
+        i++;
+    }
+    printf("\n");
+
+    // exemplo de do-while
+    i = 0;
+    do {
+        printf("%d ", i);
+        i++;
+    } while (i < 10);
+    printf("\n");
+
+    // exemplo de for
+    for (i = 0; i < 10; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+Neste exemplo, cada tipo de loop é usado para imprimir os números de 0 a 9. O primeiro loop é um loop `while`, o segundo é um loop `do-while` e o terceiro é um loop `for`.
+
 _________________________________________________________________________________________________________________________________________________________________________
 ## Ponteiros
