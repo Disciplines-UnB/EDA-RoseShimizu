@@ -98,7 +98,7 @@ int main() {
 Nesse exemplo, a variável `maior` recebe o valor de `a` se `a` for maior do que `b`, ou o valor de `b` caso contrário. A função `printf()` então imprime o valor da variável `maior`. No caso deste exemplo, a variável `maior` recebe o valor de `b` (que é maior do que `a`), e o programa imprime "O maior valor é: 20".
 
 
-### IF, ELSE IF, ELSE
+### If, Else If, Else
 O `if`, `else if` e o `else` são estruturas condicionais em C que permitem que o programa execute diferentes blocos de código com base em uma determinada condição.
 
 A sintaxe básica do `if` em C é a seguinte:
@@ -219,3 +219,42 @@ Neste exemplo, cada tipo de loop é usado para imprimir os números de 0 a 9. O 
 
 _________________________________________________________________________________________________________________________________________________________________________
 ## Ponteiros
+
+Um ponteiro é uma variável que contém o endereço de memória de outra variável. Em C, para declarar um ponteiro, usamos o operador `*` junto com o tipo de dado que o ponteiro aponta.
+
+Por exemplo, para declarar um ponteiro que aponta para uma variável inteira, podemos usar o seguinte código:
+
+```c
+int *p;
+```
+
+Isso declara uma variável `p` que é um ponteiro para um valor inteiro.
+
+Para obter o endereço de memória de uma variável, podemos usar o operador `&`. Por exemplo, se tivermos uma variável `x`, podemos obter seu endereço de memória com o seguinte código:
+
+```c
+int x = 10;
+int *p = &x;
+```
+
+Isso define `p` como um ponteiro que aponta para o endereço de memória da variável `x`.
+
+Podemos atribuir um valor para o endereço de memória apontado pelo ponteiro, usando o operador de desreferência `*`. Por exemplo, para atribuir o valor `20` para a variável `x`, podemos fazer o seguinte:
+
+```c
+*p = 20;
+```
+
+Isso atribui o valor `20` para o endereço de memória apontado por `p`, que é o endereço de memória da variável `x`.
+
+Podemos ler o valor armazenado no endereço de memória apontado pelo ponteiro, também usando o operador de desreferência `*`. Por exemplo, para imprimir o valor armazenado na variável `x`, podemos fazer o seguinte:
+
+```c
+printf("%d\n", *p);
+```
+
+Isso imprime o valor armazenado no endereço de memória apontado por `p`, que é o valor da variável `x`.
+
+Outra coisa importante a se lembrar é que o ponteiro deve ser inicializado antes de ser usado. Se um ponteiro não for inicializado, ele pode apontar para um endereço de memória aleatório, o que pode causar comportamento imprevisível no programa.
+
+Também é importante ter cuidado ao acessar memória através de ponteiros, pois isso pode levar a erros de segmentação (segmentation faults) se o ponteiro apontar para uma área inválida de memória.
