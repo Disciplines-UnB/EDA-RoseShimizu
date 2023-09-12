@@ -9,7 +9,6 @@ Saída:
 Seu programa deve mostrar quem dos tres jogadores ganhou a partida: A, B ou C. Se nenhum jogador ganhou, exiba a mensagem empate. Verifique os exemplos para entender melhor o formato da saida
 */
 
-
 #include <stdio.h>
 
 int main() {
