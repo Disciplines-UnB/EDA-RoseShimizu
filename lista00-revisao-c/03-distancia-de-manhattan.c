@@ -10,8 +10,7 @@ Seu programa deve imprimir uma única linha contendo um único inteiro: o númer
 
 Restrições
 0 ≤ Xm, Ym ≤ 1000
-0 ≤ Xr
-, Yr ≤ 1000
+0 ≤ Xr, Yr ≤ 1000
 
 Exemplos:
 Entrada
