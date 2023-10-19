@@ -24,7 +24,7 @@ void printNotX(char*string){
 }
 
 int main(){
-    char arr[100];
+    char arr[1000];
     scanf("%s",arr);
     int countX = qtdX(arr);
     printNotX(arr);
