@@ -20,6 +20,7 @@ Saída
 O programa deve imprimir cada resultado em uma linha. Para um dado número N e seu respectivo resultado M, a saída
 deverá seguir o seguinte formato:
 f91(N) = M
+
 Exemplo
 Entrada
 500
