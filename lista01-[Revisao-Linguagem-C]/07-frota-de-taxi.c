@@ -11,7 +11,6 @@ A entrada é composta por uma linha contendo quatro números reais com precisão
 Saída:
 A saída deve ser composta por uma única linha contendo o caractere ‘A’ se é mais econômico abastecer a frota com álcool ou o caractere ‘G’ se é mais econômico ou indiferente abastecer a frota com gasolina.
 */
-
 #include <stdio.h>
 
 int main() {
