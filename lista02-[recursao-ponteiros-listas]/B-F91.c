@@ -12,6 +12,7 @@ estranhos que encontrar por aí.
 Maldição:
 • Se N ≥ 101, então f91(N) = N − 10.
 • Se N ≤ 100, então f91(N) = f91(f91(N + 11)).
+
 Entrada
 O arquivo de entrada consiste de, no máximo, 250.000 casos de teste. Cada caso de teste consiste em um único número N,
 onde (0 ≤ N ≤ 1.000.000). O fim da entrada é alcançado quando o número 0 é encontrado. O número 0 não deve ser
