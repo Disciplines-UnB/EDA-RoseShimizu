@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 int qtdX(char*string){
     int contador=0;
     if(*string=='x'){contador++; return contador+ qtdX(string+1);}
