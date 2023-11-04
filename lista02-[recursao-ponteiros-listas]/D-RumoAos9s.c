@@ -19,7 +19,6 @@ Exemplo de Saída:
 9 is a multiple of 9 and has 9-degree 1.
 9999999999999999999999999999998 is not a multiple of 9.
 */
-
 #include <stdio.h>
 
 int digitSum(int n) {
