@@ -20,7 +20,6 @@ paralelepipedo
 Exemplo de Saída 2
 odepipelelarap
 
-
 Author: John L. Gardenghi
 */
 
