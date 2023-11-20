@@ -49,3 +49,20 @@ int main() {
     printf("\n");
     return 0;
 }
+
+/*
+Características do Algoritmo de Ordenação Bolha:
+Estável: Mantém a ordem de elementos iguais.
+In-Place: Não usa espaço extra significativo.
+
+Não Adaptável: Eficiência geralmente não melhora com listas parcialmente ordenadas.
+Complexidade Temporal:
+Pior caso: O(n²)
+Melhor caso: O(n) (com otimização)
+Caso médio: O(n²)
+Complexidade Espacial Auxiliar: O(1)
+
+**Cálculo Total de Comparações**:
+   - Total de comparações = \( (n-1) + (n-2) + (n-3) + \ldots + 1 \)
+   - Esta é uma série aritmética que pode ser sumarizada como \( \frac{n(n-1)}{2} \).
+*/
