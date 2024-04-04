@@ -28,31 +28,25 @@ Note que você NÃO pode iniciar o processamento pelo fim do vetor v, pois, dest
 
 #include <stdio.h>
 
-void lerSequencia(int soma, int ultimo, int limite) {
-    int num;
-    scanf("%d", &num);
-
-    if (num == 0) {
-        printf("%d\n", ultimo);
-        return;
-    }
-
-    if (soma + num <= limite) {
-        lerSequencia(soma + num, num, limite);
-    } else {
-        printf("%d ", ultimo);
-        lerSequencia(num, num, limite);
-    }
-}
-
 int main() {
-    int primeiro;
-    scanf("%d", &primeiro);
+	int n, comprimento = 0, soma = 0, a = 0, tamanho = 0; 
+    int v[100], lista[100];
+	while(scanf("%d", &n) && n != 0) {
+		v[comprimento] = n;
+		comprimento++;
+	}
+	scanf("%d", &soma);
 
-    int limite;
-    scanf("%d", &limite);
-
-    lerSequencia(primeiro, primeiro, limite);
-
-    return 0;
+	for (int i = 0; i < comprimento; i++) {
+		a += v[i];
+		if (a > soma) {
+			lista[tamanho] = v[i];
+			tamanho++;
+			a = 0;
+		}
+	}
+	for (int i = tamanho - 1; i >= 0; i--) {
+		printf("%d\n", lista[i]);
+	}
+	return 0;
 }
